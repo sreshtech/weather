@@ -1,0 +1,59 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, h4, h5, h6, ul, ol, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Apply styles to the entire weather forecast section */
+  .weather-forecast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url("images/bg.png") no-repeat center/cover;
+    font-family: "Poppins", sans-serif;
+    color: #fff; /* Default text color */
+  }
+  
+  /* Styling for current weather information */
+  .current-info {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .current-info h2 {
+    margin-bottom: 20px;
+  }
+  
+  .current-details {
+    /* Style current weather details */
+    /* ... */
+  }
+  
+  /* Styling for future forecast */
+  .future-forecast {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+  }
+  
+  .future-forecast h2 {
+    margin-bottom: 20px;
+  }
+  
+  .forecast-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Style individual forecast items */
+    /* ... */
+  }
+
+    /* Path: Weather%20Website/script.js */
+/* Fetch weather data from OpenWeatherMap API */
