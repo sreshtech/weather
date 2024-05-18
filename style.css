@@ -1,59 +1,149 @@
-/* Reset default margin and padding */
+</body> </html> /* Reset default margin and padding */
 body, h1, h2, h3, h4, h5, h6, ul, ol, li {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Apply styles to the entire weather forecast section */
-  .weather-forecast {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: url("images/bg.png") no-repeat center/cover;
-    font-family: "Poppins", sans-serif;
-    color: #fff; /* Default text color */
-  }
-  
-  /* Styling for current weather information */
-  .current-info {
-    text-align: center;
-    padding: 40px;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .current-info h2 {
-    margin-bottom: 20px;
-  }
-  
-  .current-details {
-    /* Style current weather details */
-    /* ... */
-  }
-  
-  /* Styling for future forecast */
-  .future-forecast {
-    text-align: center;
-    padding: 40px;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-  }
-  
-  .future-forecast h2 {
-    margin-bottom: 20px;
-  }
-  
-  .forecast-items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    /* Style individual forecast items */
-    /* ... */
-  }
-
-    /* Path: Weather%20Website/script.js */
-/* Fetch weather data from OpenWeatherMap API */
+margin: 0;
+padding: 0;
+}
+/* Apply styles to the entire weather forecast section */
+body {
+font-family: 'Poppins', sans-serif;
+background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("pic.jpg") no-repeat center/cover;
+color: #fff;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+header {
+background-color: rgba(255, 255, 255, 0.1);
+padding: 20px;
+text-align: center;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+margin-bottom: 10px;
+}
+nav ul {
+list-style-type: none;
+display: flex;
+justify-content: center;
+}
+nav li {
+margin: 0 10px;
+}
+nav a {
+color: #fff;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+nav a:hover {
+color: #ccc;
+}
+.container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+}
+/* Styling for current weather information */
+.current-info {
+text-align: center;
+padding: 40px;
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 10px;
+margin-bottom: 20px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+animation: fadeIn 1s ease;
+}
+.current-info h2 {
+margin-bottom: 20px;
+font-size: 2.5rem;
+}
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+/* Styling for future forecast */
+.future-forecast {
+text-align: center;
+padding: 40px;
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+animation: fadeIn 1s ease;
+}
+.future-forecast h2 {
+margin-bottom: 20px;
+font-size: 2.5rem;
+}
+.forecast-items {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+.forecast-item {
+margin: 10px;
+padding: 20px;
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+}
+.forecast-item:hover {
+transform: scale(1.05);
+}
+.weather-icon {
+width: 80px;
+height: 80px;
+margin-bottom: 10px;
+}
+.temp {
+font-size: 1.2rem;
+font-weight: bold;
+}
+/* Social sharing buttons */
+.social-buttons {
+margin-top: 20px;
+text-align: center;
+}
+.social-icon {
+display: inline-block;
+margin: 0 10px;
+color: #fff;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+.social-icon:hover {
+color: #ccc;
+}
+.social-icon i {
+margin-right: 5px;
+}
+/* User feedback form */
+.feedback-form {
+margin-top: 20px;
+text-align: center;
+}
+.feedback-form label {
+display: block;
+margin-bottom: 10px;
+}
+.feedback-form textarea {
+width: 300px;
+height: 100px;
+padding: 10px;
+border: none;
+border-radius: 5px;
+resize: none;
+margin-bottom: 10px;
+}
+.feedback-form button {
+padding: 10px 20px;
+background-color: #007bff;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+.feedback-form button:hover {
+background-color: #0056b3;
+}
