@@ -2,7 +2,218 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatib<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="current-info">
+        <div class="date-container">
+          <div class="time" id="time">12:30 <span id="am-pm">PM</span></div>
+          <div class="date" id="date">Monday, 25 May</div>
+
+          <div class="others" id="current-weather-items"></div>
+        </div>
+
+        <div class="place-container">
+          <div class="time-zone" id="time-zone">Asia/Kolkata</div>
+          <div id="country" class="country">IN</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="future-forecast">
+      <div class="today" id="current-temp">
+        <img
+          src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Fsearch%3Fq%3Dopenweathermap&psig=AOvVaw1TMKMuDEd2rPuukOY6VtWh&ust=1704654917238000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCJiomsu8yYMDFQAAAAAdAAAAABAD"
+          alt="weather icon"
+          class="w-icon"
+        />
+        <div class="other">
+          <div class="day">Monday</div>
+          <div class="temp">Night - 25.6&#176; C</div>
+          <div class="temp">Day - 35.6&#176; C</div>
+        </div>
+      </div>
+
+      <div class="weather-forecast" id="weather-forecast">
+        <div class="weather-forecast-item">
+          <div class="day">Tuesday</div>
+          <img
+            src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Fsearch%3Fq%3Dopenweathermap&psig=AOvVaw1TMKMuDEd2rPuukOY6VtWh&ust=1704654917238000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCJiomsu8yYMDFQAAAAAdAAAAABAD"
+            alt="weather icon"
+            class="w-icon"
+          />
+          <div class="temp">Night - 25.6&#176; C</div>
+          <div class="temp">Day - 35.6&#176; C</div>
+        </div>
+        <div class="weather-forecast-item">
+          <div class="day">Wednesday</div>
+          <img
+            src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Fsearch%3Fq%3Dopenweathermap&psig=AOvVaw1TMKMuDEd2rPuukOY6VtWh&ust=1704654917238000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCJiomsu8yYMDFQAAAAAdAAAAABAD"
+            alt="weather icon"
+            class="w-icon"
+          />
+          <div class="temp">Night - 25.6&#176; C</div>
+          <div class="temp">Day - 35.6&#176; C</div>
+        </div>
+        <div class="weather-forecast-item">
+          <div class="day">Thursday</div>
+          <img
+            src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Fsearch%3Fq%3Dopenweathermap&psig=AOvVaw1TMKMuDEd2rPuukOY6VtWh&ust=1704654917238000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCJiomsu8yYMDFQAAAAAdAAAAABAD"
+            alt="weather icon"
+            class="w-icon"
+          />
+          <div class="temp">Night - 25.6&#176; C</div>
+          <div class="temp">Day - 35.6&#176; C</div>
+        </div>
+        <div class="weather-forecast-item">
+          <div class="day">Friday</div>
+          <img
+            src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Fsearch%3Fq%3Dopenweathermap&psig=AOvVaw1TMKMuDEd2rPuukOY6VtWh&ust=1704654917238000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCJiomsu8yYMDFQAAAAAdAAAAABAD"
+            alt="weather icon"
+            class="w-icon"
+          />
+          <div class="temp">Night - 25.6&#176; C</div>
+          <div class="temp">Day - 35.6&#176; C</div>
+        </div>
+        <div class="weather-forecast-item">
+          <div class="day">Saturday</div>
+          <img
+            src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Fsearch%3Fq%3Dopenweathermap&psig=AOvVaw1TMKMuDEd2rPuukOY6VtWh&ust=1704654917238000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCJiomsu8yYMDFQAAAAAdAAAAABAD"
+            alt="weather icon"
+            class="w-icon"
+          />
+          <div class="temp">Night - 25.6&#176; C</div>
+          <div class="temp">Day - 35.6&#176; C</div>
+        </div>
+        <div class="weather-forecast-item">
+            <div class="day">Sunday</div>
+            <img
+              src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Fsearch%3Fq%3Dopenweathermap&psig=AOvVaw1TMKMuDEd2rPuukOY6VtWh&ust=1704654917238000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCJiomsu8yYMDFQAAAAAdAAAAABAD"
+              alt="weather icon"
+              class="w-icon"
+            />
+            <div class="temp">Night - 25.6&#176; C</div>
+            <div class="temp">Day - 35.6&#176; C</div>
+          </div>
+      </div>
+    </div>
+    <!-- Social sharing buttons -->
+<div class="social-buttons">
+  <a href="#" class="social-icon">Share on Facebook</a>
+  <a href="#" class="social-icon">Tweet this forecast</a>
+</div>
+
+<!-- User feedback form -->
+<form class="feedback-form">
+  <label for="feedback">Share your thoughts on the forecast:</label>
+  <textarea id="feedback" name="feedback" rows="4"></textarea>
+  <button type="submit">Submit</button>
+</form>
+
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+  // JavaScript for location-based customization
+  function getUserLocation() {
+      // Get user's location using geolocation API
+    }
+    
+    // JavaScript for unit preferences
+    function toggleUnits() {
+      // Toggle between Celsius and Fahrenheit
+    }
+  </script>
+  <div class="container">
+    <div class="current-info">
+      <div class="date-container">
+        <div class="time" id="time">12:30 <span id="am-pm">PM</span></div>
+        <div class="date" id="date">Monday, 25 May</div>
+  
+        <div class="others" id="current-weather-items"></div>
+      </div>
+  
+      <div class="place-container">
+        <div class="time-zone" id="time-zone">Asia/Kolkata</div>
+        <div id="country" class="country">IN</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="future-forecast">
+    <div class="today" id="current-temp">
+      <img
+        src="https://openweathermap.org/img/w/01d.png"
+        alt="weather icon"
+        class="w-icon"
+      />
+      <div class="other">
+        <div class="day">Monday</div>
+        <div class="temp">Night - 25.6&#176; C</div>
+        <div class="temp">Day - 35.6&#176; C</div>
+      </div>
+    </div>
+  
+    <div class="weather-forecast" id="weather-forecast">
+      <div class="weather-forecast-item">
+        <div class="day">Tuesday</div>
+        <img
+          src="https://openweathermap.org/img/w/02d.png"
+          alt="weather icon"
+          class="w-icon"
+        />
+        <div class="temp">Night - 25.6&#176; C</div>
+        <div class="temp">Day - 35.6&#176; C</div>
+      </div>
+      <!-- Add more forecast items here -->
+    </div>
+  </div>
+  
+  <!-- Social sharing buttons -->
+  <div class="social-buttons">
+    <a href="#" class="social-icon">
+      <i class="fab fa-facebook-f"></i>
+      Share on Facebook
+    </a>
+    <a href="#" class="social-icon">
+      <i class="fab fa-twitter"></i>
+      Tweet this forecast
+    </a>
+  </div>
+  
+  <!-- User feedback form -->
+  <div class="feedback-form">
+    <label for="feedback">Share your thoughts on the forecast:</label>
+    <textarea id="feedback" name="feedback" rows="4"></textarea>
+    <button type="submit">Submit</button>
+  </div>
+  
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  
+  <script src="script.js"></script>
+  <footer> by Sreshta</footer>
+    
+    <script src="script.js"></script>
+    <footer> by Sreshta</footer>
+  </body>
+</html>le" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
